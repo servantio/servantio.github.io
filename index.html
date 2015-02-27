@@ -1,0 +1,40 @@
+---
+layout : layout
+title : Jonas Hovgaard - Professional C# developer
+description: Personal blog for professional web developer Jonas Hovgaard (jhovgaard)
+---
+
+{% for post in paginator.posts %}
+
+	{% if forloop.last %}
+	<div class="post">
+	{% else %}
+	<div class="post spacer">
+	{% endif %}
+		<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+		<div style="text-align: center;">
+		<abbr class="published" title="{{ post.date | date: "%e %B, %Y"  }}">PUBLISHED {{ post.date | date: "%e %B, %Y"  }}</abbr> <span class="commentcount">(<a href="http://www.jhovgaard.com{{post.url}}#disqus_thread"></a>)</span>
+		</div>
+		{{ post.content }}
+		
+		    <blockquote id="servant-ad">Do you still manage your web server through remote desktop or IIS Manager? <a href="https://www.servant.io/?utm_source=jhovgaardblog&utm_medium=banner&utm_campaign=product
+" target="_blank">Try Servant.io today!</a></blockquote>
+	</div>
+{% endfor %}
+
+
+<div class="paginator">
+{% if paginator.previous_page %}
+	{% if paginator.previous_page == 1 %}
+		<a class="previous" href="/"><img src="/img/previous.png" alt="Previous" /></a>
+	{% else %}
+		<a class="previous" href="/page{{ paginator.previous_page }}/"><img src="/img/previous.png" alt="Previous" /></a>
+	{% endif %}
+{% endif %}
+
+
+{% if paginator.next_page %}
+  <a class="next" href="/page{{ paginator.next_page }}/"><img src="/img/next.png" alt="Next"/></a>
+{% endif %}
+</div>
+<div class="clear"></div>
