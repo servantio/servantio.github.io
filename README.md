@@ -1,4 +1,4 @@
-jhovgaard.github.io
+servantio.github.io
 ===================
 
-jhovgaard.com
+blog.servant.io
