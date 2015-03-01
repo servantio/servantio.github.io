@@ -1,11 +1,11 @@
 ---
 layout: nil
-site_url: http://www.jhovgaard.com
+site_url: http://blog.servant.io
 ---
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-    <title>jhovgaard.com</title>
+    <title>blog.servant.io</title>
     <link>{{page.site_url}}</link>
     <atom:link href="{{page.site_url}}/rss.xml" rel="self" type="application/rss+xml" />
     <description></description>
