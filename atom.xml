@@ -1,17 +1,17 @@
 ---
 layout: nil
-site_url: http://www.jhovgaard.com
+site_url: http://blog.servant.io
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>jhovgaard.com</title>
+  <title>blog.servant.io</title>
   <link href="{{page.site_url}}"/>
   <link type="application/atom+xml" rel="self" href="{{page.site_url}}/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{page.site_url}}</id>
   <author>
     <name>Jonas Hovgaard</name>
-    <email>j@jhovgaard.dk</email>
+    <email>jonas@servant.io</email>
   </author>
 
   {% for post in site.posts %}
